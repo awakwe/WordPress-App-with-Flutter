@@ -15,7 +15,8 @@ class PostListItem extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10.0),
       child: GestureDetector(
         onTap: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => PostDetails(post)));
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => PostDetails(post)));
         },
         child: Row(
           children: <Widget>[
@@ -42,7 +43,9 @@ class PostListItem extends StatelessWidget {
                       textAlign: TextAlign.left,
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis,
-                      style: Theme.of(context).textTheme.body2, //TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 18.0, fontFamily: 'Roboto'),
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyText1, //TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 18.0, fontFamily: 'Roboto'),
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,

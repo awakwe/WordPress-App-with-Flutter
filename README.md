@@ -38,7 +38,7 @@ flutter run
 It is that simple.
 
 ## Features
-- [x] Latest Posts
+- Latest Posts
 - [x] Featured Posts
 - [x] Single Category Posts List Page
 - [x] Infinite Scroll with pagination

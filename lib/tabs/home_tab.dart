@@ -47,15 +47,20 @@ class ListHeading extends StatelessWidget {
         children: <Widget>[
           Text(
             title,
-            style: Theme.of(context).textTheme.display1,
+            style: Theme.of(context).textTheme.headline4,
           ),
           GestureDetector(
             onTap: () {
               PostCategory category = PostCategory(name: title, id: categoryId);
-              Navigator.push(context, MaterialPageRoute(builder: (context) => SingleCategory(category)));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => SingleCategory(category)));
             },
             child: Container(
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(8.0), color: Theme.of(context).textSelectionColor),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8.0),
+                  color: Theme.of(context).textSelectionColor),
               padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
               child: Text('Show All'),
             ),

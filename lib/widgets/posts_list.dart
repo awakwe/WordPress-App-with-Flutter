@@ -41,7 +41,8 @@ class _PostsListState extends State<PostsList> {
     super.initState();
     getData();
     _scrollController.addListener(() {
-      if (_scrollController.position.pixels == _scrollController.position.maxScrollExtent) {
+      if (_scrollController.position.pixels ==
+          _scrollController.position.maxScrollExtent) {
         getData();
       }
     });

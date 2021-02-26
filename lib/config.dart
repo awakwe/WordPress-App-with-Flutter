@@ -1,7 +1,7 @@
-const String TITLE = "ProPakistani";
+const String TITLE = "Zonr";
 
 /// last slash ' / ' is mandatory
-const String URL = "https://propakistani.pk/";
+const String URL = "https://zonr.org/";
 
 const int FEATURED_CATEGORY_ID = 20;
 const String FEATURED_CATEGORY_TITLE = 'Featured';
